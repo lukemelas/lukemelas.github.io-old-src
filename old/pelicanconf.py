@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Luke Melas-Kyriazi'
 SITENAME = "Luke's Notes"
-SITEURL = '' # 'lukemelas.github.io'
+SITEURL = 'lukemelas.github.io'
 
 PATH = 'content'
 
@@ -32,21 +32,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 # Theme
-THEME = 'pelican-themes/attila'
-#THEME = 'pelican-themes/aboutwilson'
-#THEME = 'pelican-themes/alchemy'
-
-AUTHORS_BIO = {
-    "zutrinken": {
-        "name": "Zutrinken",
-        "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
-        "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
-        "website": "http://blog.arulraj.net",
-        "location": "Chennai",
-        "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
-    }
-}
-
+THEME = 'themes/pelican-alchemy/alchemy'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
