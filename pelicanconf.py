@@ -4,9 +4,11 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Luke Melas-Kyriazi'
 SITENAME = "Luke's Notes"
-SITEURL = '' # 'lukemelas.github.io'
+SITEURL = '' 
 
 PATH = 'content'
+
+STATIC_PATHS = ['assets']
 
 TIMEZONE = 'US/Eastern'
 
@@ -25,11 +27,20 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
          ('You can modify those links in your config file', '#'),)
 
+# COLORS
+COLOR_SCHEME_CSS = 'monokai.css'
+
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/lukemelas'),
+          ('linkedin', 'https://linkedin.com/lukemelas'),)
 
 DEFAULT_PAGINATION = False
+
+# NEW
+#HEADER_COVER = 'static/my_image.png'
+
+# CSS
+CSS_OVERRIDE = ['assets/css/custom.css']
 
 # Theme
 THEME = 'pelican-themes/attila'
@@ -37,7 +48,7 @@ THEME = 'pelican-themes/attila'
 #THEME = 'pelican-themes/alchemy'
 
 AUTHORS_BIO = {
-    "zutrinken": {
+    "luke": {
         "name": "Zutrinken",
         "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
         "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",

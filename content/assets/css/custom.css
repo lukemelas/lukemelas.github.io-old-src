@@ -1,0 +1,43 @@
+#notebook-container pre {
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 1.57em;
+}
+
+a.anchor-link {
+    font-size: 0.75em;
+    color: lightgray;
+    padding: 5px;
+    border-bottom: none;
+    float: right;
+}
+
+.prompt.input_prompt {
+    font-size: 15px;
+    display: none;
+    color: lightgray;
+}
+
+.inner {
+    max-width: 48em
+}
+
+#notebook-container .output_stream pre {
+    background: #e4e4dd;
+    color: black;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -2em;
+}
+
+.post-content.post-content img {
+    max-width: 20em;
+    margin: 2.5em auto;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+
+
