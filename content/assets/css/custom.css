@@ -39,5 +39,8 @@ body {
     background-color: #f8f8f8;
 }
 
+#blog-header.has-cover.has-cover {
+    padding: 3em 0 3em;
+}
 
 
