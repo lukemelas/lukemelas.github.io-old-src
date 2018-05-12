@@ -1,3 +1,6 @@
+@import url(//fonts.googleapis.com/css?family=Crimson+Text);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
 #notebook-container pre {
     font-family: monospace;
     font-size: 15px;
@@ -39,8 +42,17 @@ body {
     background-color: #f8f8f8;
 }
 
-#blog-header.has-cover.has-cover, #post-header.has-cover.has-cover {
+#blog-header.has-cover.has-cover{
     padding: 3em 0 3em;
 }
 
+#post-header.has-cover.has-cover {
+    padding: 5em 0 3em;
+}
+
+h1.blog-name, h2.post-title, 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 100;
+}
 
