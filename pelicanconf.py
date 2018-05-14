@@ -54,18 +54,25 @@ CSS_OVERRIDE = ['assets/css/custom.css']
 # Theme
 THEME = 'theme/attila'
 
-# AUTHOR(S)
+# AUTHOR(S) -- NOTE: The data for the home page (index.html) is in the index.html
+#                    file in the theme:         theme/attila/templates/index.html
 AUTHORS_BIO = {
     "luke": {
-        "name": "Zutrinken",
-        "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
-        "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
-        "website": "http://blog.arulraj.net",
-        "location": "Chennai",
-        "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+        "name": "Luke Melas-Kyriazi",
+        "cover": "assets/images/hvd-blur-compressed-2.jpg",
+        "image": "assets/images/headshot2.jpg",
+        "website": "#",
+        "location": "Cambridge, MA",
+        "bio": "Hello, I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I'm interested in machine learning with a focus on computer vision and natural language processing. I hope you enjoy my writing and open-source code."
     }
 }
 
-
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+## Comments
+#DISQUS_SITENAME = "attilademo"
+
+# Analytics
+GOOGLE_ANALYTICS = "UA-119150275-1"
+
