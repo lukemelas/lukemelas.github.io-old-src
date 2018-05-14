@@ -61,9 +61,8 @@ AUTHORS_BIO = {
         "name": "Luke Melas-Kyriazi",
         "cover": "assets/images/hvd-blur-compressed-2.jpg",
         "image": "assets/images/headshot2.jpg",
-        "website": "#",
         "location": "Cambridge, MA",
-        "bio": "Hello, I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I'm interested in machine learning with a focus on computer vision and natural language processing. I hope you enjoy my writing and open-source code."
+        "bio": "I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I hope you enjoy my writing and open-source code."
     }
 }
 
