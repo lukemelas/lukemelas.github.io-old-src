@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover index">
+      <div class="inner">
+        <nav id="navigation">
+          {% if SITE_LOGO %}
+          <span class="blog-logo">
+            <a href="{{ SITEURL }}"><img src="{{SITE_LOGO}}" alt="Blog Logo" /></a>
+          </span>
+          {% endif %}
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <!--
+        <h1 class="blog-name"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+        {% if SITESUBTITLE %}
+        <span class="blog-description">{{ SITESUBTITLE }}</span>
+        {% endif %}
+        -->
+        {% if HEADER_COVER %}
+            <div class="blog-cover cover" style="background-image: url('{{ HEADER_COVER }}')">
+        {% elif HEADER_COLOR %}
+            <div class="blog-cover cover" style="background-color: {{ HEADER_COLOR }}">
+        {% else %}
+            <div class="blog-cover cover" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/home-bg.jpg')">
+        {% endif %}        
+      </div>
+    </header>
+
+    <section id="blog-author" class="has-cover" >
+        <div class="inner">
+            <aside class="post-author">
+                <figure class="post-author-avatar">
+                    <img src="/assets/images/headshot2.jpg" alt="luke"/> 
+                </figure>
+                <div class="post-author-bio">
+                    <h4 class="post-author-name">
+                        <a href="{{ SITEURL }}" style="color: #fff; font-size: 30px;">Luke Melas-Kyriazi</a>
+                    </h4>
+                    <p class="post-author-about">
+                        Hello, I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I'm interested in machine learning with a focus on computer vision and natural language processing. I hope you enjoy my writing and open-source code. 
+                    </p>
+                    <!--
+                    <p class="post-author-about">
+                        For anyone interested in collaborating, feel free to email me at lmelaskyriazi[at]college[dot]harvard[dot]edu.
+                    </p>
+                    -->
+                    <span class="post-author-location">
+                        <i class="ic ic-location"></i>
+                        Cambridge, MA
+                    </span>
+                    <!--
+                    <span class="post-author-website">
+                        <a href="#">
+                            <i class="ic ic-link"></i> 
+                            Website
+                        </a>
+                    </span>
+                    -->
+                    <span class="post-author-github">
+                        <a target="_blank" href="https://github.com/lukemelas">
+                            <i class="ic ic-github"></i> 
+                            Github
+                        </a>
+                    </span>
+                    <span class="post-author-linkedin">
+                        <a target="_blank" href="https://linkedin.com/in/lukemelas">
+                            <i class="ic ic-linkedin"></i> 
+                            Linkedin
+                        </a>
+                    </span>
+                </div>
+                <div class="clear"></div>
+            </aside>
+        </div>
+    </section>
+
+{% endblock header %}
+
+{% block content %}
+
+<div id="index" class="container">
+<main class="content" role="main">
+{% include "partials/loop.html" %}
+</main>
+</div>
+{% endblock content %}    

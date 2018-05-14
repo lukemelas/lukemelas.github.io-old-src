@@ -52,7 +52,7 @@ HEADER_COVER = 'assets/images/hvd-blur-compressed-2.jpg'
 CSS_OVERRIDE = ['assets/css/custom.css']
 
 # Theme
-THEME = 'pelican-themes/attila'
+THEME = 'theme/attila'
 
 # AUTHOR(S)
 AUTHORS_BIO = {
