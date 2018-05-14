@@ -8,11 +8,15 @@ SITEURL = ''
 
 PATH = 'content'
 
-STATIC_PATHS = ['assets']
+STATIC_PATHS = ['assets', 'assets/icons/favicon.ico']
 
 TIMEZONE = 'US/Eastern'
 
 DEFAULT_LANG = 'en'
+
+EXTRA_PATH_METADATA = {
+    'assets/icons/favicon.ico': {'path': 'favicon.ico'}
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -23,30 +27,34 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Python', 'http://python.org/'),
+         ('Github', 'http://github.com/'),)
 
-# COLORS
+# Colors (for code?)
 COLOR_SCHEME_CSS = 'monokai.css'
 
-# Social widget
+# Menu 
+MENUITEMS = (('Home', '/'), )
+
+
+# Social widget (I believe not used)
 SOCIAL = (('github', 'https://github.com/lukemelas'),
-          ('linkedin', 'https://linkedin.com/lukemelas'),)
+          ('linkedin', 'https://linkedin.com/in/lukemelas'),)
 
 DEFAULT_PAGINATION = False
 
 # NEW
 #HEADER_COVER = 'static/my_image.png'
+HEADER_COVER = '"' # no background image
+HEADER_COVER = 'assets/images/hvd-blur-compressed-2.jpg' 
 
 # CSS
 CSS_OVERRIDE = ['assets/css/custom.css']
 
 # Theme
 THEME = 'pelican-themes/attila'
-#THEME = 'pelican-themes/aboutwilson'
-#THEME = 'pelican-themes/alchemy'
 
+# AUTHOR(S)
 AUTHORS_BIO = {
     "luke": {
         "name": "Zutrinken",
