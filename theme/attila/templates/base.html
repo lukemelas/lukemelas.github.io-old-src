@@ -23,6 +23,9 @@
   <meta name="generator" content="Pelican" />
   <link href="{{ SITEURL }}" rel="canonical" />
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
   <!-- Feed -->
   {% for name,link in SOCIAL if name.lower() in ['rss', 'rss-square', 'feed'] %}
       <link href="{{ link }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -116,9 +119,6 @@
         {% endif %}
     {% endfor %}
   {% endblock twitter_card %}
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 <!-- TODO : Body class -->
