@@ -1,12 +1,12 @@
 Title: Starting a Blog
 Date: 2018-05-14 6:30
+Modified: 2018-05-14 6:30
 Category: Meta
 Tags: meta
 Slug: starting-a-blog
 Authors: luke
 Summary: Hello, world! I'm Luke, an undergraduate studying mathematics and computer science. In this first post, I just want to briefly introduce myself and explain why I decided to start writing a blog.
 
-[Comment]: # (Modified: 2018-05-14 6:30)
 
 Hello, world! I'm Luke, an undergraduate studying mathematics and computer science. In this first post, I just want to briefly introduce myself and explain why I decided to start writing a blog.
 
