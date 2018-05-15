@@ -1,6 +1,5 @@
 Title: Starting a Blog
 Date: 2018-05-14 6:30
-Modified: 2018-05-14 6:30
 Category: Meta
 Tags: meta
 Slug: starting-a-blog
