@@ -124,7 +124,9 @@
                 <!--<a href="{{ SITEURL }}/{{ author.url }}">{{ author|capitalize }}</a>-->
             {% endfor %}
             | <time datetime="{{ article.locale_date }}">{{ article.locale_date }}</time> 
+            {% if article.modified %}
             | <span> Updated on {{ article.locale_modified }}</span>
+            {% endif %}
         </span>
         <!-- TODO : Modified check -->
         {% if article.modified %}
