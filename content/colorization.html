@@ -11791,9 +11791,9 @@ div#notebook {
 <h3 id="Overview">Overview<a class="anchor-link" href="#Overview">&#182;</a></h3><p>In image colorization, our goal is to produce a colored image given a grayscale input image. This problem is challenging because it is multimodal -- a single grayscale image may correspond to many plausible colored images. As a result, traditional models often relied on significant user input alongside a grayscale image.</p>
 <p>Recently, deep neural networks have shown remarkable success in automatic image colorization -- going from grayscale to color with no additional human input. This success may in part be due to their ability to capture and use semantic information (i.e. what the image actually is) in colorization, although we are not yet sure what exacly makes these types of models perform so well.</p>
 <p>Before explaining the model, we will first lay out our problem more precisely.</p>
-<h4 id="The-Problem">The Problem<a class="anchor-link" href="#The-Problem">&#182;</a></h4><p>We aim to infer a full-colored image, which has 3 values per pixel (lightness, saturation, and hue), from a grayscale image, which has only 1 value per pixel (lightness only). For simplicity, we will only work with images of size $256 \times 256$, so our inputs are of size $256 \times 256 \times 1$ (the lightness channel) and our outputs are of size  $256 \times 256 \times 2$ (the other two channels).</p>
-<p>Rather than work with images in the RGB format, as people usually do, we will work with them in the <a href="https://en.wikipedia.org/wiki/CIELAB_color_space">LAB colorspace</a> ($L$ightness, $A$, and $B$) . This colorspace contains exactly the same information as RGB, but it will make it easier for us to separate out the lightness channel from the other two (which we call $A$ and $B$).   We'll make a helper function to do this conversion later on.</p>
-<p>We'll try to predict the color values of the input image directly (we call this regression). There are other fancier ways of doing colorization with classification (see <a href="http://richzhang.github.io/colorization/">here</a>), but we'll stick with regression for now as it's simple and works fairly well.</p>
+<h4 id="The-Problem">The Problem<a class="anchor-link" href="#The-Problem">&#182;</a></h4><p>We aim to infer a full-colored image, which has 3 values per pixel (lightness, saturation, and hue), from a grayscale image, which has only 1 value per pixel (lightness only). For simplicity, we will only work with images of size <em>256 x 256</em>, so our inputs are of size <em>256 x 256 x 1</em> (the lightness channel) and our outputs are of size  <em>256 x 256 x 2</em> (the other two channels).</p>
+<p>Rather than work with images in the RGB format, as people usually do, we will work with them in the <a href="https://en.wikipedia.org/wiki/CIELAB_color_space">LAB colorspace</a> (<em>L</em>ightness, <em>A</em>, and <em>B</em>) . This colorspace contains exactly the same information as RGB, but it will make it easier for us to separate out the lightness channel from the other two (which we call <em>A</em> and <em>B</em>).   We'll make a helper function to do this conversion later on.</p>
+<p>We'll try to predict the color values of the input image directly (that is, we do regression). There are other fancier ways of doing colorization with classification (see <a href="http://richzhang.github.io/colorization/">here</a>), but we'll stick with regression for now as it's simple and works fairly well.</p>
 
 </div>
 </div>
@@ -11819,30 +11819,6 @@ div#notebook {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>--2018-05-15 13:31:42--  http://data.csail.mit.edu/places/places205/testSetPlaces205_resize.tar.gz
-Resolving data.csail.mit.edu (data.csail.mit.edu)... 128.52.129.35
-Connecting to data.csail.mit.edu (data.csail.mit.edu)|128.52.129.35|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2341250899 (2.2G) [application/octet-stream]
-Saving to: ‘testSetPlaces205_resize.tar.gz’
-
-testSetPlaces205_re 100%[===================&gt;]   2.18G  5.06MB/s    in 6m 33s  
-
-2018-05-15 13:38:15 (5.67 MB/s) - ‘testSetPlaces205_resize.tar.gz’ saved [2341250899/2341250899]
-
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
