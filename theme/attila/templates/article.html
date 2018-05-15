@@ -120,14 +120,15 @@
         {% endif %}
         <span class="post-meta">
             {% for author in article.authors %}
-                <a href="#">{{ author.name }}</a>
+                <a href="#">{{ author.name | capitalize }}</a>
                 <!--<a href="{{ SITEURL }}/{{ author.url }}">{{ author|capitalize }}</a>-->
             {% endfor %}
-            | <time datetime="{{ article.locale_date }}">{{ article.locale_date }}</time>
+            | <time datetime="{{ article.locale_date }}">{{ article.locale_date }}</time> 
+            | <span> Updated on {{ article.locale_modified }}</span>
         </span>
         <!-- TODO : Modified check -->
         {% if article.modified %}
-            <span class="post-meta"> | Updated on {{ article.locale_modified }}</span>
+            <!-- <span class="post-meta"> | Updated on {{ article.locale_modified }}</span> -->
         {% endif %}        
         {% if article.header_cover %}
             <div class="post-cover cover" style="background-image: url('{{ article.header_cover }}')">

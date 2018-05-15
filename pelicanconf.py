@@ -34,7 +34,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 COLOR_SCHEME_CSS = 'monokai.css'
 
 # Menu 
-MENUITEMS = (('Home', '/'), )
+MENUITEMS = (('Home', '/'), 
+             ('Image Colorization', '/image-colorization.html'),)
 
 
 # Social widget (I believe not used)
