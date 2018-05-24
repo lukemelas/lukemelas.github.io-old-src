@@ -47,7 +47,7 @@ DEFAULT_PAGINATION = False
 # NEW
 #HEADER_COVER = 'static/my_image.png'
 HEADER_COVER = '"' # no background image
-HEADER_COVER = 'assets/images/hvd-blur-compressed-2.jpg' 
+HEADER_COVER = 'assets/images/general/headshot.jpg' 
 
 # CSS
 CSS_OVERRIDE = ['assets/css/custom.css']
@@ -60,8 +60,8 @@ THEME = 'theme/attila'
 AUTHORS_BIO = {
     "luke": {
         "name": "Luke Melas-Kyriazi",
-        "cover": "assets/images/hvd-blur-compressed-2.jpg",
-        "image": "assets/images/headshot2.jpg",
+        "cover": "assets/images/general/background.jpg",
+        "image": "assets/images/general/headshot.jpg",
         "location": "Cambridge, MA",
         "bio": "I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I hope you enjoy my writing and open-source code."
     }
