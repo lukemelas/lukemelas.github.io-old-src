@@ -47,7 +47,7 @@ DEFAULT_PAGINATION = False
 # NEW
 #HEADER_COVER = 'static/my_image.png'
 HEADER_COVER = '"' # no background image
-HEADER_COVER = 'assets/images/general/headshot.jpg' 
+HEADER_COVER = 'assets/images/general/background.jpg' 
 
 # CSS
 CSS_OVERRIDE = ['assets/css/custom.css']
