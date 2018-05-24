@@ -2,7 +2,7 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 #notebook-container pre {
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 15px;
     border-radius: 5px 5px 0px 0px;
     line-height: 1.57em;
