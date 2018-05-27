@@ -210,7 +210,7 @@
 
                 </section>
 
-                {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+                {% if DISQUS_SITENAME and article.status != "draft" %}
                 <script type="text/javascript">
                     var disqus = '{{ DISQUS_SITENAME }}';
                     var disqus_shortname = '{{ DISQUS_SITENAME }}';
