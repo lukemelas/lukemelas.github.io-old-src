@@ -71,7 +71,7 @@ AUTHORS_BIO = {
 #RELATIVE_URLS = True
 
 ## Comments
-#DISQUS_SITENAME = "attilademo"
+DISQUS_SITENAME = "lukemelas"
 
 # Analytics
 GOOGLE_ANALYTICS = "UA-119150275-1"
