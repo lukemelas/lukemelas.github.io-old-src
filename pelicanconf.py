@@ -6,6 +6,8 @@ AUTHOR = 'Luke Melas-Kyriazi'
 SITENAME = "Luke's Notes"
 SITEURL = '' 
 
+MY_SITEURL = 'lukemelas.github.io'
+
 PATH = 'content'
 
 STATIC_PATHS = ['assets', 'assets/icons/favicon.ico']
