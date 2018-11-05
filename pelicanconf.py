@@ -65,7 +65,7 @@ AUTHORS_BIO = {
         "cover": "assets/images/general/background.jpg",
         "image": "assets/images/general/headshot.jpg",
         "location": "Cambridge, MA",
-        "bio": "I'm Luke, an undergraduate at Harvard studying mathematics and computer science. I hope you enjoy my writing and open-source code."
+        "bio": "I'm Luke, a student at Harvard interested in mathematics and computer science. I hope you enjoy my writing and open-source code."
     }
 }
 
