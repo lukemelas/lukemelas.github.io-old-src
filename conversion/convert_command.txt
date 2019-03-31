@@ -1,0 +1,1 @@
+jupyter nbconvert --to html my_notebook.ipynb
