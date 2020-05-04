@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Luke Melas-Kyriazi'
-SITENAME = "Luke's Notes"
+SITENAME = "Luke Melas-Kyriazi"
 SITEURL = '' 
 
 MY_SITEURL = 'lukemelas.github.io'
@@ -27,18 +27,18 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python', 'http://python.org/'),
-         ('Github', 'http://github.com/'),)
+# # Blogroll
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python', 'http://python.org/'),
+#          ('Github', 'http://github.com/'),)
 
 # Colors (for code?)
 COLOR_SCHEME_CSS = 'monokai.css'
 
 # Menu 
-MENUITEMS = (('Home', '/'), 
-             ('Image Colorization', '/image-colorization.html'),)
-
+MENUITEMS = (('Home', '/'), )
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
 
 # Social widget (I believe not used)
 SOCIAL = (('github', 'https://github.com/lukemelas'),
@@ -55,7 +55,8 @@ HEADER_COVER = 'assets/images/general/background.jpg'
 CSS_OVERRIDE = ['assets/css/custom.css']
 
 # Theme
-THEME = 'theme/attila'
+# THEME = 'theme/attila'
+THEME = 'theme/medius'
 
 # AUTHOR(S) -- NOTE: The data for the home page (index.html) is in the index.html
 #                    file in the theme:         theme/attila/templates/index.html
