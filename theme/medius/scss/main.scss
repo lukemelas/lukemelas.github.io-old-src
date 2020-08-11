@@ -10,9 +10,28 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic&subset=latin,latin-ext);
 
 
-$font-family-sans: 'Open Sans', jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-$font-family-serif: Merriweather, freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-$font-family-mono: Consolas, 'Deja Vu Sans Mono', 'Ubuntu Mono', 'Bitstream Vera Sans Mono', Monaco, 'Courier New', monospace;
+$font-family-sans: 'Open Sans',
+jaf-bernino-sans,
+'Lucida Grande',
+'Lucida Sans Unicode',
+'Lucida Sans',
+Geneva,
+Verdana,
+sans-serif;
+$font-family-serif: Merriweather,
+freight-text-pro,
+Georgia,
+Cambria,
+'Times New Roman',
+Times,
+serif;
+$font-family-mono: Consolas,
+'Deja Vu Sans Mono',
+'Ubuntu Mono',
+'Bitstream Vera Sans Mono',
+Monaco,
+'Courier New',
+monospace;
 
 
 // pure compatible media queries
@@ -25,7 +44,8 @@ $media-xl: "screen and (min-width: 80em)";
 
 
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -33,11 +53,15 @@ html, body {
 
 body {
     line-height: 1.4;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *="pure-u"] {
     font-family: $font-family-sans;
 }
 
@@ -52,23 +76,30 @@ div.metabar-container {
 
     div.metabar {
         height: 100%;
-        box-shadow: 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     }
 
 }
 
 
-div.post-content, div.entry-content {
+div.post-content,
+div.entry-content {
 
     font-weight: 300;
     font-family: $font-family-serif;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: $font-family-sans;
         font-weight: normal;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 36px;
     }
 
@@ -80,11 +111,15 @@ div.post-content, div.entry-content {
         font-size: 28px;
     }
 
-    h5, h6 {
+    h5,
+    h6 {
         font-size: 26px;
     }
 
-    h3, h4, h5, h6 {
+    h3,
+    h4,
+    h5,
+    h6 {
         font-weight: 300;
     }
 
@@ -140,9 +175,9 @@ div.main-container {
         border-radius: 3px;
         padding: 20px;
         margin-bottom: 20px;
-        border: 1px solid rgba(0,0,0,.09);
+        border: 1px solid rgba(0, 0, 0, .09);
         background-color: #fff;
-        box-sizing:border-box;
+        box-sizing: border-box;
 
         @media #{$media-lg} {
             padding: 20px;
@@ -151,8 +186,9 @@ div.main-container {
 
         h2 {
             font-size: 28px;
+
             a {
-                color: rgba(0,0,0,0.8);
+                color: rgba(0, 0, 0, 0.8);
                 text-decoration: none;
             }
         }
@@ -160,7 +196,8 @@ div.main-container {
         div.post-content {
             font-family: $font-family-serif;
             font-size: 18px;
-            color: rgba(0,0,0,0.8);
+            color: rgba(0, 0, 0, 0.8);
+
             a {
                 background-position: 0px 23px;
             }
@@ -191,8 +228,8 @@ div.main-container {
             //padding: 20px 0;
 
             div.right-head {
-                color: rgba(0,0,0,0.8);
-                border-bottom: 1px solid rgba(0,0,0,.0785);
+                color: rgba(0, 0, 0, 0.8);
+                border-bottom: 1px solid rgba(0, 0, 0, .0785);
                 font-weight: bold;
                 padding: 10px 0 10px 0;
                 margin-bottom: 10px;
@@ -209,11 +246,11 @@ div.main-container {
         width: 90%;
 
         @media #{$media-md} {
-            max-width: 420px;  // FIXME: this is not how post images displayed
-                               //        in medium. This is my lazy way to show
-                               //        post images. But since pelican is a
-                               //        static website generator, I think this
-                               //        way is more suitable for it.
+            max-width: 420px; // FIXME: this is not how post images displayed
+            //        in medium. This is my lazy way to show
+            //        post images. But since pelican is a
+            //        static website generator, I think this
+            //        way is more suitable for it.
         }
     }
 
@@ -222,7 +259,7 @@ div.main-container {
         text-align: left;
 
         div.heading-prefix {
-            color: rgba(0,0,0,0.3);
+            color: rgba(0, 0, 0, 0.3);
             font-size: 11px;
         }
 
@@ -243,11 +280,11 @@ footer.index-footer {
     margin: 0 auto;
     text-align: center;
     padding: 10px 0 25px;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 
     a {
         display: inline-block;
-        color: rgba(0,0,0,0.3);
+        color: rgba(0, 0, 0, 0.3);
         font-size: 12px;
         margin-right: 16px;
         text-decoration: none;
@@ -255,7 +292,7 @@ footer.index-footer {
 
     a:hover {
         text-decoration: underline;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0, 0, 0, 0.6);
     }
 
 }
@@ -278,7 +315,7 @@ div.post-meta {
 
         letter-spacing: -0.02em;
         font-size: 12px;
-        color: rgba(0,0,0,0.3);
+        color: rgba(0, 0, 0, 0.3);
 
         a {
             text-decoration: none;
@@ -298,7 +335,7 @@ div.post-meta {
         }
 
         a.author:hover {
-            color: rgba(0,0,0,0.6);
+            color: rgba(0, 0, 0, 0.6);
         }
     }
 
@@ -318,12 +355,12 @@ div.page-container {
         margin: 0 auto;
         text-align: left;
         font-family: $font-family-serif;
-        font-size: 18px;
-        line-height: 1.5;
+        font-size: 17px;
+        line-height: 1.8;
         padding: 20px;
 
         @media #{$media-sm} {
-            line-height: 1.6;
+            line-height: 1.8;
         }
     }
 
@@ -335,8 +372,8 @@ div.page-container {
 
         div.post-footer {
             padding: 20px;
-            border-top: 1px solid rgba(0,0,0,0.1);
-            border-bottom: 1px solid rgba(0,0,0,0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             margin: 30px 0 40px 0;
 
             @media #{$media-md} {
@@ -350,7 +387,7 @@ div.page-container {
                 padding: 0;
 
                 a {
-                    color: rgba(0,0,0,0.8);
+                    color: rgba(0, 0, 0, 0.8);
                     text-decoration: none;
                 }
 
@@ -362,7 +399,7 @@ div.page-container {
             p.author-description {
                 font-size: 14px;
                 line-height: 1.3;
-                color: rgba(0,0,0,0.6);
+                color: rgba(0, 0, 0, 0.6);
                 margin: 4px 0;
             }
 
@@ -428,7 +465,7 @@ div.article-header-container {
             margin: 20px 0 40px 0;
 
             div.title {
-                color: rgb(255,255,255);
+                color: rgb(255, 255, 255);
                 margin: 0;
                 position: absolute;
                 top: 50%;
@@ -450,10 +487,10 @@ div.article-header-container {
                 line-height: 36px;
                 margin: 0;
 
-                @media #{$media-sm} {
-                    font-size: 60px;
-                    line-height: 60px;
-                }
+                // @media #{$media-sm} {
+                //     font-size: 60px;
+                //     line-height: 60px;
+                // }
             }
 
             h2 {
@@ -509,15 +546,15 @@ div.article-header-container {
                     margin: 0 20px 10px 20px;
                     padding-top: 20px;
 
-                    @media #{$media-sm} {
-                        font-size: 60px;
-                    }
+                    // @media #{$media-sm} {
+                    //     font-size: 60px;
+                    // }
                 }
 
                 h4 {
                     font-size: 24px;
                     font-weight: 300;
-                    color: rgba(0,0,0,0.44);
+                    color: rgba(0, 0, 0, 0.44);
                     line-height: 1.2;
                     margin: 0;
 
@@ -559,8 +596,9 @@ div.category-page-container {
         word-break: break-word;
         word-wrap: break-word;
         padding-top: 20px;
+
         a {
-            color: rgba(0,0,0,0.8);
+            color: rgba(0, 0, 0, 0.8);
             text-decoration: none;
         }
     }
@@ -568,7 +606,7 @@ div.category-page-container {
     div.section-header {
         color: rgba(0, 0, 0, 0.6);
         text-transform: uppercase;
-        border-bottom: 1px solid rgba(0,0,0,0.15);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         text-align: left;
         font-size: 11px;
         letter-spacing: .1em;
@@ -601,7 +639,7 @@ div.category-page-container {
             background-position: center;
             background-origin: border-box;
             background-size: cover;
-            border: 1px solid rgba(0,0,0,0.15);
+            border: 1px solid rgba(0, 0, 0, 0.15);
         }
 
         a.article-thumbnail-1 {
@@ -651,11 +689,12 @@ div.category-page-container {
         text-align: left;
 
         a {
-            color: rgba(0,0,0,0.9);
+            color: rgba(0, 0, 0, 0.9);
             text-decoration: none;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             line-height: 1.1;
             font-weight: bold;
             letter-spacing: -0.02em;
@@ -676,7 +715,8 @@ div.category-page-container {
         }
 
         // FIXME: this is not ideal way to fix content
-        blockquote, p {
+        blockquote,
+        p {
             margin: 0;
             letter-spacing: -0.02em;
             border: 0;
@@ -721,7 +761,8 @@ div.author-page-header {
         }
     }
 
-    div.avatar, div.avatar-no-cover {
+    div.avatar,
+    div.avatar-no-cover {
         display: inline-block;
         width: 120px;
         height: 120px;
@@ -780,10 +821,10 @@ div.author-page-header {
                 a {
                     color: rgba(0, 0, 0, 0.8);
                     font-size: 36px;
-                    border-right: 1px solid rgba(0,0,0,0.05);
+                    border-right: 1px solid rgba(0, 0, 0, 0.05);
                     padding: 0 10px;
                     transition: 100ms background-color,
-                                100ms border-color,100ms color,100ms fill;
+                        100ms border-color, 100ms color, 100ms fill;
 
                     @media #{$media-sm} {
                         font-size: 48px;
@@ -812,38 +853,40 @@ div.author-page-divider:before {
     position: absolute;
     top: 14px;
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 div.author-page-divider {
     position: relative;
     top: 11px;
     width: 100%;
+
     span {
         text-decoration: none;
         display: inline-block;
-        border: 1px solid rgba(0,0,0,0.44);
+        border: 1px solid rgba(0, 0, 0, 0.44);
         background: #fff;
         text-transform: uppercase;
         font-size: 12px;
         line-height: 1.4;
-        padding: 4px 8px 3px 12px;    // Medium is using padding-bottom: 1px
-                                      // due to font difference we need to use
-                                      // 3px
+        padding: 4px 8px 3px 12px; // Medium is using padding-bottom: 1px
+        // due to font difference we need to use
+        // 3px
         letter-spacing: .3em;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0, 0, 0, 0.6);
         position: relative;
     }
+
     span:hover {
-        border-color: rgba(0,0,0,0.6);
-        color: rgba(0,0,0,0.8);
+        border-color: rgba(0, 0, 0, 0.6);
+        color: rgba(0, 0, 0, 0.8);
     }
 }
 
 
 div.tags a {
-    color: rgba(0,0,0,0.6);
-    background: rgba(255,255,255,0.97);
+    color: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.97);
     font-size: 13px;
     border-radius: 3px;
     border: 1px solid #f0f0f0;
@@ -857,11 +900,12 @@ div.tags a {
 div.tags a:hover {
     color: #468c54;
     border-color: #a9d8b2;
-    background: rgba(87,173,104,0.1);
+    background: rgba(87, 173, 104, 0.1);
     text-decoration: none;
 }
 
-pre, code {
+pre,
+code {
     font-family: $font-family-mono;
 }
 
@@ -882,7 +926,7 @@ code {
 }
 
 blockquote {
-    border-left: 3px solid rgba(0,0,0,0.8);
+    border-left: 3px solid rgba(0, 0, 0, 0.8);
     font-style: italic;
     padding-left: 20px;
     margin-left: -23px;
@@ -893,31 +937,36 @@ blockquote {
 // pagination
 div.pagination {
     margin: 20px auto;
+
     div.left {
         text-align: left;
     }
+
     div.right {
         text-align: right;
     }
+
     a {
         display: inline-block;
         line-height: 31px;
         padding: 0 14px;
         font-size: 12px;
-        transition: 100ms background-color,100ms border-color,100ms color,100ms fill;
-        border: 1px solid rgba(0,0,0,0.15);
+        transition: 100ms background-color, 100ms border-color, 100ms color, 100ms fill;
+        border: 1px solid rgba(0, 0, 0, 0.15);
         border-radius: 999em;
-        color: rgba(0,0,0,0.44);
+        color: rgba(0, 0, 0, 0.44);
         text-decoration: none;
     }
+
     a:hover {
-        color: rgba(0,0,0,0.6);
-        border-color: rgba(0,0,0,0.3);
+        color: rgba(0, 0, 0, 0.6);
+        border-color: rgba(0, 0, 0, 0.3);
     }
+
     a:active {
         outline: none;
-        color: rgba(0,0,0,0.8);
-        border-color: rgba(0,0,0,0.6);
+        color: rgba(0, 0, 0, 0.8);
+        border-color: rgba(0, 0, 0, 0.6);
     }
 
 }
@@ -926,73 +975,313 @@ div.pagination {
 
 /* pygments */
 .highlight {
-    .c { color: #8f5902; font-style: italic }
-    .err { color: #a40000; border: 1px solid #ef2929 }
-    .g { color: #000000 }
-    .k { color: #204a87; font-weight: bold }
-    .l { color: #000000 }
-    .n { color: #000000 }
-    .o { color: #ce5c00; font-weight: bold }
-    .x { color: #000000 }
-    .p { color: #000000; font-weight: bold }
-    .cm { color: #8f5902; font-style: italic }
-    .cp { color: #8f5902; font-style: italic }
-    .c1 { color: #8f5902; font-style: italic }
-    .cs { color: #8f5902; font-style: italic }
-    .gd { color: #a40000 }
-    .ge { color: #000000; font-style: italic }
-    .gr { color: #ef2929 }
-    .gh { color: #000080; font-weight: bold }
-    .gi { color: #00A000 }
-    .go { color: #000000; font-style: italic }
-    .gp { color: #8f5902 }
-    .gs { color: #000000; font-weight: bold }
-    .gu { color: #800080; font-weight: bold }
-    .gt { color: #a40000; font-weight: bold }
-    .kc { color: #204a87; font-weight: bold }
-    .kd { color: #204a87; font-weight: bold }
-    .kn { color: #204a87; font-weight: bold }
-    .kp { color: #204a87; font-weight: bold }
-    .kr { color: #204a87; font-weight: bold }
-    .kt { color: #204a87; font-weight: bold }
-    .ld { color: #000000 }
-    .m { color: #0000cf; font-weight: bold }
-    .s { color: #4e9a06 }
-    .na { color: #c4a000 }
-    .nb { color: #204a87 }
-    .nc { color: #000000 }
-    .no { color: #000000 }
-    .nd { color: #5c35cc; font-weight: bold }
-    .ni { color: #ce5c00 }
-    .ne { color: #cc0000; font-weight: bold }
-    .nf { color: #000000 }
-    .nl { color: #f57900 }
-    .nn { color: #000000 }
-    .nx { color: #000000 }
-    .py { color: #000000 }
-    .nt { color: #204a87; font-weight: bold }
-    .nv { color: #000000 }
-    .ow { color: #204a87; font-weight: bold }
-    .w { color: #f8f8f8; text-decoration: underline }
-    .mb { color: #0000cf; font-weight: bold }
-    .mf { color: #0000cf; font-weight: bold }
-    .mh { color: #0000cf; font-weight: bold }
-    .mi { color: #0000cf; font-weight: bold }
-    .mo { color: #0000cf; font-weight: bold }
-    .sb { color: #4e9a06 }
-    .sc { color: #4e9a06 }
-    .sd { color: #8f5902; font-style: italic }
-    .s2 { color: #4e9a06 }
-    .se { color: #4e9a06 }
-    .sh { color: #4e9a06 }
-    .si { color: #4e9a06 }
-    .sx { color: #4e9a06 }
-    .sr { color: #4e9a06 }
-    .s1 { color: #4e9a06 }
-    .ss { color: #4e9a06 }
-    .bp { color: #3465a4 }
-    .vc { color: #000000 }
-    .vg { color: #000000 }
-    .vi { color: #000000 }
-    .il { color: #0000cf; font-weight: bold }
+    .c {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .err {
+        color: #a40000;
+        border: 1px solid #ef2929
+    }
+
+    .g {
+        color: #000000
+    }
+
+    .k {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .l {
+        color: #000000
+    }
+
+    .n {
+        color: #000000
+    }
+
+    .o {
+        color: #ce5c00;
+        font-weight: bold
+    }
+
+    .x {
+        color: #000000
+    }
+
+    .p {
+        color: #000000;
+        font-weight: bold
+    }
+
+    .cm {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .cp {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .c1 {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .cs {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .gd {
+        color: #a40000
+    }
+
+    .ge {
+        color: #000000;
+        font-style: italic
+    }
+
+    .gr {
+        color: #ef2929
+    }
+
+    .gh {
+        color: #000080;
+        font-weight: bold
+    }
+
+    .gi {
+        color: #00A000
+    }
+
+    .go {
+        color: #000000;
+        font-style: italic
+    }
+
+    .gp {
+        color: #8f5902
+    }
+
+    .gs {
+        color: #000000;
+        font-weight: bold
+    }
+
+    .gu {
+        color: #800080;
+        font-weight: bold
+    }
+
+    .gt {
+        color: #a40000;
+        font-weight: bold
+    }
+
+    .kc {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .kd {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .kn {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .kp {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .kr {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .kt {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .ld {
+        color: #000000
+    }
+
+    .m {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .s {
+        color: #4e9a06
+    }
+
+    .na {
+        color: #c4a000
+    }
+
+    .nb {
+        color: #204a87
+    }
+
+    .nc {
+        color: #000000
+    }
+
+    .no {
+        color: #000000
+    }
+
+    .nd {
+        color: #5c35cc;
+        font-weight: bold
+    }
+
+    .ni {
+        color: #ce5c00
+    }
+
+    .ne {
+        color: #cc0000;
+        font-weight: bold
+    }
+
+    .nf {
+        color: #000000
+    }
+
+    .nl {
+        color: #f57900
+    }
+
+    .nn {
+        color: #000000
+    }
+
+    .nx {
+        color: #000000
+    }
+
+    .py {
+        color: #000000
+    }
+
+    .nt {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .nv {
+        color: #000000
+    }
+
+    .ow {
+        color: #204a87;
+        font-weight: bold
+    }
+
+    .w {
+        color: #f8f8f8;
+        text-decoration: underline
+    }
+
+    .mb {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .mf {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .mh {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .mi {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .mo {
+        color: #0000cf;
+        font-weight: bold
+    }
+
+    .sb {
+        color: #4e9a06
+    }
+
+    .sc {
+        color: #4e9a06
+    }
+
+    .sd {
+        color: #8f5902;
+        font-style: italic
+    }
+
+    .s2 {
+        color: #4e9a06
+    }
+
+    .se {
+        color: #4e9a06
+    }
+
+    .sh {
+        color: #4e9a06
+    }
+
+    .si {
+        color: #4e9a06
+    }
+
+    .sx {
+        color: #4e9a06
+    }
+
+    .sr {
+        color: #4e9a06
+    }
+
+    .s1 {
+        color: #4e9a06
+    }
+
+    .ss {
+        color: #4e9a06
+    }
+
+    .bp {
+        color: #3465a4
+    }
+
+    .vc {
+        color: #000000
+    }
+
+    .vg {
+        color: #000000
+    }
+
+    .vi {
+        color: #000000
+    }
+
+    .il {
+        color: #0000cf;
+        font-weight: bold
+    }
 }
