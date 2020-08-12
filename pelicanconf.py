@@ -16,6 +16,8 @@ TIMEZONE = 'US/Eastern'
 
 DEFAULT_LANG = 'en'
 
+DEFAULT_DATE_FORMAT = "%A %d %B %Y"
+
 EXTRA_PATH_METADATA = {
     'assets/icons/favicon.ico': {'path': 'favicon.ico'}
 }
@@ -39,6 +41,9 @@ COLOR_SCHEME_CSS = 'monokai.css'
 MENUITEMS = (('Home', '/'), )
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
+
+# Helper
+FALSE = False
 
 # Social widget (I believe not used)
 SOCIAL = (('github', 'https://github.com/lukemelas'),

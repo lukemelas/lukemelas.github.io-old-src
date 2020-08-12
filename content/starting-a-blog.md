@@ -6,7 +6,6 @@ Slug: starting-a-blog
 Authors: luke
 Summary: Hello, world! 
 
-
 Hello, world!
 
 I'm Luke, a student interested in mathematics, statistics, and computer science. 

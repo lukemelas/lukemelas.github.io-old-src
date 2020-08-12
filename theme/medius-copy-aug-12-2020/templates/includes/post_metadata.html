@@ -1,4 +1,5 @@
-<!-- <div class="pure-u-3-4 meta-data">
+{% if FALSE %}
+<div class="pure-u-3-4 meta-data">
     <a href="{{ SITEURL }}/{{ article.category.url }}" class="category">{{ article.category }}</a><br />
 
     {% for author in article.authors %}
@@ -8,10 +9,14 @@
     {% if article.readtime_minutes %}
     &mdash; {{ article.readtime_minutes }} min read
     {% endif %}
-</div> -->
+</div>
+{% if endif %}
 
 <div class="pure-u-1 meta-data">
     <a href="{{ SITEURL }}/{{ article.category.url }}" class="category">{{ article.category }}</a><br />
-    <span title="{{ article.date.isoformat() }}">{{ article.locale_date }}</span>
-    {% if article.readtime_minutes %} &mdash; {{ article.readtime_minutes }} min read {% endif %}
+
+    &mdash; <span title="{{ article.date.isoformat() }}">{{ article.locale_date }}</span>
+    {% if article.readtime_minutes %}
+    &mdash; {{ article.readtime_minutes }} min read
+    {% endif %}
 </div>

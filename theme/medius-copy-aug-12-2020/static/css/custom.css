@@ -169,10 +169,6 @@ div.main-container div.post h2 a:hover {
     color: black;
 }
 
-.post .post-meta.pure-g {
-    display: none;
-}
-
 .main-container .post .post-content.post-content,
 .post-footer {
     display: inline;
@@ -221,10 +217,6 @@ footer.index-footer {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between
-}
-
-div.post-meta div.meta-data {
-    text-align: center;
 }
 
 @media screen and (max-width: 64em) {
