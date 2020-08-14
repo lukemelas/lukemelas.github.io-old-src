@@ -1,16 +1,24 @@
 # Personal website
 
 Clone:
-```git clone --recurse-submodules https://github.com/lukemelas/lukemelas.github.io-src.git```
+```bash
+git clone --recurse-submodules https://github.com/lukemelas/lukemelas.github.io-src.git
+```
 
 Install Pelican:
-```pip install pelican```
+```bash
+pip install pelican
+```
 
 Serve:
-```./develop_server.sh start```
+```bash
+./develop_server.sh start
+```
 
 Publish:
-```./deploy.sh```
+```bash
+./deploy.sh
+```
 
 
 

@@ -28,7 +28,7 @@
 
 div.main-container,
 footer.index-footer {
-    background: white;
+    /* background: white; */
     background-image: initial;
     background-position-x: initial;
     background-position-y: initial;

@@ -43,10 +43,25 @@
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate"
         title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
+
+    {# DARK AND LIGHT THEME STYLES #}
+    <link id="dark-theme-style" rel="stylesheet" type="text/css" {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+        {% if THEME_COLOR|default("light") == "dark" %}
+        media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)" {% else %}
+        media="(prefers-color-scheme: dark)" {% endif %}
+        {% elif THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR|default("light") == "light" %} disabled="disabled"
+        {% endif %} href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/dark-theme.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css" {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+        {% if THEME_COLOR|default("light") == "dark" %} media="(prefers-color-scheme: light)" {% else %}
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" {% endif %} {% endif %}
+        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/light-theme.css">
+
+
     {% endblock head %}
 </head>
 
-<body>
+<body {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %} class="{{ THEME_COLOR|default('light') }}-theme"
+    {% endif %}>
     <div class="flex-wrapper">
         <div class="everything-but-footer">
             <div class="main-header">
@@ -69,6 +84,19 @@
         </div>
         <footer class="index-footer">
             <a href="{{ SITEURL }}/" title="{{ SITENAME|striptags }}">{{ SITENAME }}</a>
+
+            <!-- THEME COLOR -->
+            {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
+            <a class="footer-dark-tag" href="javascript:void(0)" onclick="window.theme.switch(`dark`)">Dark</a>
+            <a class="footer-light-tag" href="javascript:void(0)" onclick="window.theme.switch(`light`)">Light</a>
+
+            <script id="dark-theme-script" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/dark-theme/dark-theme.js"
+                data-enable-auto-detect-theme="{{ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE|default('true') }}"
+                data-default-theme="{{ THEME_COLOR|default('light') }}" type="text/javascript">
+            </script>
+            {% endif %}
+            </p>
+
         </footer>
     </div>
 

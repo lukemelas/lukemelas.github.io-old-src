@@ -155,7 +155,7 @@ div.navigation {
 
 div.main-container {
   padding: 5px;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
 }
 
 div.main-container .pure-g {
@@ -177,7 +177,7 @@ div.main-container div.post {
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.09);
-  background-color: #fff;
+  /* background-color: #fff; */
   box-sizing: border-box;
 }
 
@@ -827,7 +827,7 @@ div.author-page-divider span {
   text-decoration: none;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.44);
-  background: #fff;
+  /* background: #fff; */
   text-transform: uppercase;
   font-size: 12px;
   line-height: 1.4;
