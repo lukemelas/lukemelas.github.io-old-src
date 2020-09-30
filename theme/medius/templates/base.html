@@ -66,12 +66,12 @@
         <div class="everything-but-footer">
             <div class="main-header">
                 <ul>
-                    {% if article or page or archive or author %}
+                    {% if True or article or page or archive or author %}
                     <li><a href="{{ SITEURL }}/" class="pure-menu-heading pure-menu-link">Home</a></li> •
                     {% endif %}
-                    <li><a href="/pages/about.html" class="pure-menu-heading pure-menu-link">About</a></li> •
-                    <li><a href="/author/luke.html" class="pure-menu-heading pure-menu-link">Blog</a></li> •
+                    <!-- <li><a href="/pages/about.html" class="pure-menu-heading pure-menu-link">About</a></li> • -->
                     <li><a href="/pages/research.html" class="pure-menu-heading pure-menu-link">Research</a></li> •
+                    <li><a href="/author/luke.html" class="pure-menu-heading pure-menu-link">Blog</a></li> •
                     <li><a href="https://github.com/lukemelas" class="pure-menu-heading pure-menu-link">GitHub</a></li>
                 </ul>
             </div>
@@ -90,9 +90,10 @@
             <a class="footer-dark-tag" href="javascript:void(0)" onclick="window.theme.switch(`dark`)">Dark</a>
             <a class="footer-light-tag" href="javascript:void(0)" onclick="window.theme.switch(`light`)">Light</a>
 
+            <!-- data-enable-auto-detect-theme="{{ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE|default('true') }}" -->
             <script id="dark-theme-script" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/dark-theme/dark-theme.js"
-                data-enable-auto-detect-theme="{{ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE|default('true') }}"
-                data-default-theme="{{ THEME_COLOR|default('light') }}" type="text/javascript">
+                data-enable-auto-detect-theme="false" data-default-theme="{{ THEME_COLOR|default('light') }}"
+                type="text/javascript">
             </script>
             {% endif %}
             </p>

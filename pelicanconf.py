@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Luke Melas-Kyriazi'
 SITENAME = "Luke Melas-Kyriazi"
-SITEURL = '' 
+SITEURL = ''
 
 MY_SITEURL = 'lukemelas.github.io'
 
@@ -37,7 +37,7 @@ AUTHOR_FEED_RSS = None
 # Colors (for code?)
 COLOR_SCHEME_CSS = 'monokai.css'
 
-# Menu 
+# Menu
 MENUITEMS = (('Home', '/'), )
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
@@ -53,11 +53,12 @@ DEFAULT_PAGINATION = False
 
 # NEW
 #HEADER_COVER = 'static/my_image.png'
-HEADER_COVER = '"' # no background image
-HEADER_COVER = 'assets/images/general/background.jpg' 
+HEADER_COVER = '"'  # no background image
+HEADER_COVER = 'assets/images/general/background.jpg'
 
 # CSS
-CSS_OVERRIDE = ['assets/css/custom.css', 'assets/css/light-theme.css', 'assets/css/dark-theme.css', 'assets/css/dark-theme.js']
+CSS_OVERRIDE = ['assets/css/custom.css', 'assets/css/light-theme.css',
+                'assets/css/dark-theme.css', 'assets/css/dark-theme.js']
 
 # Theme
 # THEME = 'theme/attila'
@@ -78,7 +79,7 @@ AUTHORS_BIO = {
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-## Comments
+# Comments
 # DISQUS_SITENAME = "lukemelas"
 
 # Analytics
@@ -86,5 +87,5 @@ GOOGLE_ANALYTICS = "UA-119150275-1"
 
 # DARK MODE
 THEME_COLOR = 'light'  # 'dark'
-THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True  # True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True

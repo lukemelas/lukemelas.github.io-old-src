@@ -1,4 +1,4 @@
-Title: An introduction of sorts 
+Title: Welcome
 Date: 2018-05-14 6:30
 Category: Meta
 Tags: meta

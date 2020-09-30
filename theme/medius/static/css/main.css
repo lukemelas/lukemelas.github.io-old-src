@@ -808,14 +808,14 @@ div.author-page-header div.author-profile ul.author-links li:last-child a {
   border-right: none;
 }
 
-div.author-page-divider:before {
+/* div.author-page-divider:before {
   content: "";
   display: block;
   position: absolute;
   top: 14px;
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
-}
+} */
 
 div.author-page-divider {
   position: relative;

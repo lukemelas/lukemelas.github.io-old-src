@@ -236,3 +236,9 @@ div.post-meta div.meta-data {
         line-height: 1;
     }
 }
+
+div.post.entry-content.homepage {
+    line-height: 1.8;
+    padding-top: 5px;
+    text-align: left;
+}
